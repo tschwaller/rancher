@@ -43,7 +43,7 @@ $ docker-machine ssh rancher-host1 sudo docker run -e CATTLE_AGENT_IP=$(ifconfig
 $ docker-machine ssh rancher-host2 sudo docker run -e CATTLE_AGENT_IP=$(ifconfig eth0 | grep "inet " | awk -F'[: ]+' '{ print $4 }') -d --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/rancher:/var/lib/rancher rancher/agent:v1.0.2 http://192.168.64.1:9080/v1/scripts/C696D1400F43164DA971:1479909601100:ggFpLItZz1tvk0XP34RfuaJ8YfM
 $ docker-machine ssh rancher-host3 sudo docker run -e CATTLE_AGENT_IP=$(ifconfig eth0 | grep "inet " | awk -F'[: ]+' '{ print $4 }') -d --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/rancher:/var/lib/rancher rancher/agent:v1.0.2 http://192.168.64.1:9080/v1/scripts/C696D1400F43164DA971:1479909601100:ggFpLItZz1tvk0XP34RfuaJ8YfM
 ```
-![Add Host](images/addhost.png) (Image to be added)
+![Add Host](./images/addhost.png) (Image to be added)
 
 to be continued...
 
