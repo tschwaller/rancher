@@ -22,9 +22,7 @@ $ open http://localhost:9080  #  also reachable at http://192.168.64.1:9080
 
 ```hcl
 $ docker-machine create --driver=xhyve --xhyve-memory-size='512' --xhyve-boot-cmd='loglevel=3 user=docker console=ttyS0 console=tty0 noembed nomodeset norestore waitusb=10 base host=host1' rancher-host1 
-
 $ docker-machine create --driver=xhyve --xhyve-memory-size='512' --xhyve-boot-cmd='loglevel=3 user=docker console=ttyS0 console=tty0 noembed nomodeset norestore waitusb=10 base host=host2' rancher-host2 
-
 $ docker-machine create --driver=xhyve --xhyve-memory-size='512' --xhyve-boot-cmd='loglevel=3 user=docker console=ttyS0 console=tty0 noembed nomodeset norestore waitusb=10 base host=host3' rancher-host3
 ```
 
