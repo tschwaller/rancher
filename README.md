@@ -1,6 +1,6 @@
 # xhyve Rancher Setup
 
-Here are the steps to set up a 3-node Rancher Cluster on your MacOS Laptop using [xhyve](https://github.com/mist64/xhyve) adopted from [here](https://gist.github.com/axnux/09dc375d71398cbbee44ebd23ba35a08).
+Here are the steps to set up a 3-node Rancher Cluster on your MacOS Laptop using [xhyve](https://github.com/mist64/xhyve) (adopted from [here](https://gist.github.com/axnux/09dc375d71398cbbee44ebd23ba35a08)).
 
 ## Install [Docker for Mac](https://docs.docker.com/docker-for-mac/)
 
