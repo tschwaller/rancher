@@ -36,7 +36,7 @@ rancher-host2   -        xhyve    Running   tcp://192.168.64.12:2376           v
 rancher-host3   -        xhyve    Running   tcp://192.168.64.13:2376           v1.12.3
 ```
 
-## Add rancher-host[1-3] to Rancher using the command the UI shows (change URL!!)
+## Add hosts to Rancher using the command the UI shows (use your URL!!)
 
 ```hcl
 $ docker-machine ssh rancher-host1 sudo docker run -e CATTLE_AGENT_IP=$(ifconfig eth0 | grep "inet " | awk -F'[: ]+' '{ print $4 }') -d --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/rancher:/var/lib/rancher rancher/agent:v1.0.2 http://192.168.64.1:9080/v1/scripts/C696D1400F43164DA971:1479909601100:ggFpLItZz1tvk0XP34RfuaJ8YfM
