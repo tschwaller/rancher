@@ -4,6 +4,12 @@ Here are the steps to set up a 3-node Rancher Cluster on your MacOS Laptop using
 
 ## Install [Docker for Mac](https://docs.docker.com/docker-for-mac/)
 
+## Install Homebrew
+
+```hcl
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ## Install [docker-machine-driver-xhyve](https://github.com/zchee/docker-machine-driver-xhyve)
 
 ```hcl
